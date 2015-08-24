@@ -1,0 +1,353 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "categories" DISABLE TRIGGER ALL;ALTER TABLE "categories_events" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "events" DISABLE TRIGGER ALL;ALTER TABLE "events_users" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "categories" ("titulo", "icone", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "comments"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "comments" ("conteudo", "data", "user_id", "event_id", "created_at", "updated_at", "id") VALUES ('MyString', '2015-08-02', NULL, NULL, '2015-08-24 14:23:12', '2015-08-24 14:23:12', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "events"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)[0m
+PG::UndefinedColumn: ERRO:  coluna "imagem" da relação "events" não existe
+LINE 1: ...ents" ("titulo", "descricao", "endereco", "data", "imagem", ...
+                                                             ^
+: INSERT INTO "events" ("titulo", "descricao", "endereco", "data", "imagem", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 'MyString', '2015-06-19 15:54:51.000000', 'MyString', '2015-08-24 14:23:12', '2015-08-24 14:23:12', 980190962)
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "categories" ENABLE TRIGGER ALL;ALTER TABLE "categories_events" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "events" ENABLE TRIGGER ALL;ALTER TABLE "events_users" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
