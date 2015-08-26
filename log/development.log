@@ -54220,3 +54220,321 @@ Started GET "/assets/bootstrap.js" for 127.0.0.1 at 2015-08-25 18:01:41 -0300
 
 
 Started GET "/assets/jssor.slider.mini.js" for 127.0.0.1 at 2015-08-25 18:01:41 -0300
+
+
+Started GET "/events" for 127.0.0.1 at 2015-08-26 07:56:22 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (data >= '2015-08-26 10:56:22.577178')  ORDER BY "events"."eu_vou_rating" DESC
+  [1m[36m (0.4ms)[0m  [1mSELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?  [["event_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?  [["event_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (540.3ms)
+Completed 200 OK in 2263ms (Views: 2049.8ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/1preview.self-5197be34f34c98ba28fa6cd420d9b69452fcd1a63da29e384bf7e6003a60769f.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:24 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:24 -0300
+
+
+Started GET "/assets/bootstrap.self-dd8ac08e17487e70c109f7c6bd9417ddb3750e7a11c3bd0c8043bfc6294bc6d3.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/botao_input_file.self-b7c8f1e5ef99702860c651f53722bc7214dd6b3b000faef5652727be3235299e.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/comments.self-fd2ab649355caec6b3d8ffb151dc87a4f54f0198e9b98ff1aaf33e5ac383afc5.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/custom.self-1f474328f46b0ad36a090ea38fe1fcb67011a2575bd838bbb1a376916e855a2d.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/devise.self-7bbe801f1f2c9546429af41d532b8904d6e373dd5705a936ff49cb416997259b.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/euvou.self-fb8a1b0b60a456d873b123b713c4d9a334925556c6b31ffd38f90348db5970e8.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/events.self-7998ea2586d3cf923a5470202fd965f3aa2c12ccff9b5e7e678d08c067685891.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/font-awesome.self-b6fed9cf2c062bad3fe02fb2c471b85a97f947fbca7b9c7fa773dbebc5f27762.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/scaffolds.self-a3df7ad8d3aa69851334883b7e665af9edc327a3c2824ef86f3bd3e27998a25c.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/style.self-f550ced9b7b4bf0ff3a159a223c858c6b97528ea78ad7effb1b24d92f0c9cfd0.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/styles.self-782ab38820bb349d3f3372e3f07dc78831d4d7bbd6ef81c45e2298669143a67f.css?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/bootstrap.self-bf3d9d0e8dffd30b063714cac0a7e26788b483f21e0ebb8669a511280a5ee97c.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/botao_input_file.self-d1af2906e4184316bc5f30ded0be879d51081b96acc3491b8f639fb5ec0dace1.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/euvou.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/formularios_fx.self-5afeaab81a208c1d4d2f2fcd10fa9d036955f5d7c9459bd395104bace62ea13f.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/ie10-viewport-bug-workaround.self-ce01c41255d7e61cc44e865184559085737a98cf6911ef67f915692152b88852.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/jquery-1.9.1.self-0128b1b2e361e2e64b7e48ba8dba94546c02fbbde5e1628f60dc899465a90dae.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/jquery.icheck.self-1eca15be90ac374eb4536c8ec175d32db0682159b5d13c7bd3f2e4a41707ff15.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/jquery.panelSnap.self-2629e9a969e85ef6bbd3eb405805f51d4437e12e5d806fbb2543ddeb59965c3c.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/jssor.slider.mini.self-c3c6f54ed103228012361c9ea9254c9dcd456381313cd3296afbc8b746066cda.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/modernizr.self-5a6d6281c52bedca896878a2edd96f658c9c081e6645b9ecbf2f6a4c7d6c58d5.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/placeholders.min.self-cd051d2d96fc8ff98e8abee87fdd492e6e7ee4e0cbe239ce9a3977e3b8d28334.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/respond.src.self-57a508f0355d2497874b83d02c21fa94680a3a96f8dcae203b0f6c1cca324c9e.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/waypoints.min.self-2bc4ab2bb3c68d3e658295b2d181d35b3bbf08e395120ce48c0439af20079937.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-26 07:56:26 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-26 07:56:36 -0300
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (data >= '2015-08-26 10:56:36.605861')  ORDER BY "events"."eu_vou_rating" DESC
+  [1m[36m (0.2ms)[0m  [1mSELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?  [["event_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?  [["event_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (24.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered events/_form_events.html.erb (253.6ms)
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (data >= '2015-08-26 10:56:37.416227')  ORDER BY "events"."eu_vou_rating" DESC LIMIT 3[0m
+  Rendered events/custom/_carouseul.html.erb (13.8ms)
+Completed 200 OK in 826ms (Views: 819.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-08-26 07:56:38 -0300
+
+
+Started GET "/assets/b21.png" for 127.0.0.1 at 2015-08-26 07:56:39 -0300
+
+
+Started GET "/assets/a21.png" for 127.0.0.1 at 2015-08-26 07:56:39 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-26 07:56:46 -0300
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (2.0ms)[0m  SELECT "events".* FROM "events" WHERE (data >= '2015-08-26 10:56:46.114172')  ORDER BY "events"."eu_vou_rating" DESC
+  [1m[36m (0.2ms)[0m  [1mSELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.3ms)[0m  SELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?  [["event_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?  [["event_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (42.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered events/_form_events.html.erb (31.7ms)
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (data >= '2015-08-26 10:56:46.498602')  ORDER BY "events"."eu_vou_rating" DESC LIMIT 3[0m
+  Rendered events/custom/_carouseul.html.erb (6.7ms)
+Completed 200 OK in 393ms (Views: 386.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-08-26 07:56:47 -0300
+
+
+Started GET "/assets/a21.png" for 127.0.0.1 at 2015-08-26 07:56:47 -0300
+
+
+Started GET "/assets/b21.png" for 127.0.0.1 at 2015-08-26 07:56:47 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-26 07:57:09 -0300
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (data >= '2015-08-26 10:57:09.123183')  ORDER BY "events"."eu_vou_rating" DESC
+  [1m[36m (0.2ms)[0m  [1mSELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?  [["event_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?  [["event_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (53.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered events/_form_events.html.erb (29.5ms)
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (data >= '2015-08-26 10:57:09.622639')  ORDER BY "events"."eu_vou_rating" DESC LIMIT 3[0m
+  Rendered events/custom/_carouseul.html.erb (15.9ms)
+Completed 200 OK in 516ms (Views: 508.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-26 07:57:09 -0300
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (3.4ms)[0m  SELECT "events".* FROM "events" WHERE (data >= '2015-08-26 10:57:09.694790')  ORDER BY "events"."eu_vou_rating" DESC
+  [1m[36m (0.3ms)[0m  [1mSELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?  [["event_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?  [["event_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (44.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered events/_form_events.html.erb (35.8ms)
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (data >= '2015-08-26 10:57:10.177518')  ORDER BY "events"."eu_vou_rating" DESC LIMIT 3[0m
+  Rendered events/custom/_carouseul.html.erb (8.5ms)
+Completed 200 OK in 493ms (Views: 484.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-08-26 07:57:10 -0300
+
+
+Started GET "/assets/b21.png" for 127.0.0.1 at 2015-08-26 07:57:10 -0300
+
+
+Started GET "/assets/a21.png" for 127.0.0.1 at 2015-08-26 07:57:10 -0300
+
+
+Started GET "/events/2" for 127.0.0.1 at 2015-08-26 07:57:13 -0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mEvent Load (0.3ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.4ms)[0m  [1mSELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mCategory Load (4.3ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."event_id" = ?  ORDER BY "comments"."data" DESC[0m  [["event_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/_comentario.html.erb (14.4ms)
+  Rendered events/show.html.erb within layouts/application (135.3ms)
+Completed 200 OK in 542ms (Views: 514.5ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-26 07:57:20 -0300
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (data >= '2015-08-26 10:57:20.635262')  ORDER BY "events"."eu_vou_rating" DESC
+  [1m[36m (0.2ms)[0m  [1mSELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?  [["event_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?  [["event_id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (57.6ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered events/_form_events.html.erb (46.6ms)
+  [1m[36mEvent Load (0.7ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (data >= '2015-08-26 10:57:21.133764')  ORDER BY "events"."eu_vou_rating" DESC LIMIT 3[0m
+  Rendered events/custom/_carouseul.html.erb (8.7ms)
+Completed 200 OK in 518ms (Views: 508.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/events/2" for 127.0.0.1 at 2015-08-26 07:57:23 -0300
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."event_id" = ?  ORDER BY "comments"."data" DESC[0m  [["event_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/_comentario.html.erb (33.7ms)
+  Rendered events/show.html.erb within layouts/application (85.4ms)
+Completed 200 OK in 481ms (Views: 451.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-26 07:57:29 -0300
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (data >= '2015-08-26 10:57:29.505664')  ORDER BY "events"."eu_vou_rating" DESC
+  [1m[36m (0.2ms)[0m  [1mSELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?  [["event_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?  [["event_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (20.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered events/_form_events.html.erb (37.2ms)
+  [1m[36mEvent Load (0.6ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (data >= '2015-08-26 10:57:29.912660')  ORDER BY "events"."eu_vou_rating" DESC LIMIT 3[0m
+  Rendered events/custom/_carouseul.html.erb (16.0ms)
+Completed 200 OK in 430ms (Views: 423.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-26 07:57:38 -0300
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (data >= '2015-08-26 10:57:38.268909')  ORDER BY "events"."eu_vou_rating" DESC
+  [1m[36m (0.2ms)[0m  [1mSELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?[0m  [["event_id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT "categories".id FROM "categories" INNER JOIN "categories_events" ON "categories"."id" = "categories_events"."category_id" WHERE "categories_events"."event_id" = ?  [["event_id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."event_id" = ?  [["event_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/index.html.erb within layouts/application (21.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered events/_form_events.html.erb (40.4ms)
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT  "events".* FROM "events" WHERE (data >= '2015-08-26 10:57:38.715524')  ORDER BY "events"."eu_vou_rating" DESC LIMIT 3[0m
+  Rendered events/custom/_carouseul.html.erb (9.2ms)
+Completed 200 OK in 458ms (Views: 453.1ms | ActiveRecord: 2.8ms)
