@@ -27,15 +27,19 @@
 					<ul class="nav navbar-nav col-sm-5 col-md-5">
 						<li><a href="#">Sobre</a></li>
 						<li><a href="#">Contato</a></li>
-						<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">+ Criar evento <b class="caret"></b></a>
+						<li class="dropdown"> 
+								<a href="#" class="dropdown-toggle btn btn-primary " data-toggle="dropdown">
+									+ Criar evento 
+								</a>
 								<ul class="dropdown-menu">
 									<li style="width: 500px;">
       							<div class="well">
       							<!-- gambiarra -->
+      							<!-- issueRenato -> quando tira o if ocorre erro em outras paginas com o formulário -->
       							  <%= 
-      							  	if request.host+request.fullpath == request.host+"/" then
-      							  		render 'form' 
-      							  	end	
+      							  		if request.host+request.fullpath == request.host+"/" then
+      							  			render 'events/form_events' 
+      							  		end
       							  %>	
       							</div>
 									</li>
@@ -74,22 +78,27 @@
 	<!-- gambiarra -->
   <%= 
   	if request.host+request.fullpath == request.host+"/" then
-  		render file: "events/custom/_carouseul.html.erb"
+  		render 'events/custom/carouseul'
+  		#render file: "events/custom/_carouseul.html.erb"
   	end
   %>
   <!--left ########################################################### -->
-  <div class="col-sm-3">
-    <!-- <h2>Side L</h2> -->
+
+  <div class="col-sm-3" style="background-color: red; min-height: 1300px; ">
+    <!-- <h2>Side L</h2> -->&nbsp;
   </div>
   <!--/left ########################################################### -->
 		<%= yield %>
 		<!-- ########################################################### lado direito -->
-	<div class="col-sm-3">
+
+	<div class="col-sm-3" style="background-color: red; min-height: 1300px;">
+
 		<!-- gambiarra -->
 		<% if notice == true then%><!--  corrigir esse if -->
 			<div class="alert alert-success" role="alert"><p id="notice"><%= notice %></p></div>
 		<% end%>
-		<!--    <h2>Side R</h2> -->
+		<!--    <h2>Side R</h2> --> &nbsp;
+
 	</div>
 	<!-- ^ ########################################################### /lado direito --> 
 </div>
