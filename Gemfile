@@ -48,8 +48,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Autenticação
 gem 'devise'
 
-#email
-gem 'mailcatcher'
-
 #Paperclip infraestrutura para anexar imagens aos projeto.
 gem 'paperclip', '~> 4.3'
