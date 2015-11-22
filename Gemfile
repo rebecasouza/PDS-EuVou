@@ -44,11 +44,19 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#Autenticação
+# Autenticação
 gem 'devise'
+# Autenticação pelo facebook
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 #email
 gem 'mailcatcher'
 
 #Paperclip infraestrutura para anexar imagens aos projeto.
 gem 'paperclip', '~> 4.3'
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
