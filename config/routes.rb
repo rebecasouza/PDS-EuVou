@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   resources :comments
   post 'euvou/confirmation', param: :id
 
-  devise_for :users
+  devise_for :users,
+            controllers: { omniauth_callbacks: 'omniauth_callbacks'}
   resources :events
   resources :categories
 

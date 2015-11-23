@@ -1,9 +1,10 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
+  devise :database_authenticatable, :registerable, 
          :recoverable, :rememberable, :trackable, :validatable,
-         :confirmable, :lockable
+         :confirmable, :lockable,
+         :omniauthable, :omniauth_providers => [:faebook]
 
   has_and_belongs_to_many :events
   has_many :events_created, foreign_key: "creator_id", class_name: 'Event'
@@ -42,7 +43,34 @@ class User < ActiveRecord::Base
   def point_for_create_event
     increment_point 50
   end
-
+  
+  # methods for retrieving the user from the omniauth from authentication
+  
+  def self.from_omniauth(auth)
+    where(auth.slice(:provider, :uid).first_or_create) do |user|
+      user.provider = auth.provider
+      user.uid = auth.uid
+      user.username = auth.info.name
+      user.email = auth.info.email
+      user.password = Devise.friendly_token[0,20]
+  end
+  end
+  
+  def self.new_with_session(params, session)
+    if session['devise.user_attributes']
+      new(session['devise.user_attributes'], without_protection: true) do |user|
+        user.attributes = params
+        user.vaild?
+      end
+    else
+      super
+    end
+  end
+  
+  def password_required?
+    super && provider.blank?
+    
+  end
   private
   def increment_point(valor)
     self.pontuacao += valor
