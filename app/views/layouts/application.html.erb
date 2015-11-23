@@ -59,9 +59,7 @@
 					<div class=" col-sm-2 col-md-2 pull-right">
 							<% unless user_signed_in? %>
 									<h4><i class="fa fa-user text-primary"></i> <%= link_to "Entrar", user_session_path %></h4>
-                      <% if false%>
                                     <h4><i class="fa fa-facebook -official text-primary"></i> <%= link_to "Entrar com o Facebook", user_omniauth_authorize_path(:facebook), class: 'fb-login' %></h4>
-                      <% end %>
 							<%end%>
 							<% if user_signed_in? %>
 									<p>
