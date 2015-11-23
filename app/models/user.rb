@@ -47,10 +47,10 @@ class User < ActiveRecord::Base
   # methods for retrieving the user from the omniauth from authentication
   
   def self.from_omniauth(auth)
-    where(auth.slice(:provider, :uid).first_or_create) do |user|
+    where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.provider = auth.provider
       user.uid = auth.uid
-      user.username = auth.info.name
+      user.nome = auth.info.name
       user.email = auth.info.email
       user.password = Devise.friendly_token[0,20]
   end
@@ -60,7 +60,7 @@ class User < ActiveRecord::Base
     if session['devise.user_attributes']
       new(session['devise.user_attributes'], without_protection: true) do |user|
         user.attributes = params
-        user.vaild?
+        user.valid?
       end
     else
       super
