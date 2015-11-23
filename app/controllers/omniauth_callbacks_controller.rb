@@ -6,7 +6,7 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     auth = env['omniauth.auth']
     @user = User.from_omniauth(request.auth, current_user)
     if @user.persisted?
-      sign_in_and_redurect @user, notice: 'Login efetuado com sucesso'
+      sign_in_and_redirect @user, notice: 'Login efetuado com sucesso'
     else
       redirect_to user_session_path
     end
