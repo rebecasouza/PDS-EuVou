@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   post 'euvou/confirmation', param: :id
 
   devise_for :users,
-  controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+  controllers: { omniauth_callbacks: 'omniauth_callbacks' }
   resources :events
   resources :categories
 
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'events#index'
   
-  get 'auth/:provider/callback' => 'omniauth_callbacks#facebook'
+  #get 'auth/:provider/callback' => 'omniauth_callbacks#facebook'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
