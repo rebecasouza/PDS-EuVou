@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, 
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable, :lockable,
-         :omniauthable, :omniauth_providers => [:faebook]
+         :omniauthable, :omniauth_providers => [:facebook]
 
   has_and_belongs_to_many :events
   has_many :events_created, foreign_key: "creator_id", class_name: 'Event'

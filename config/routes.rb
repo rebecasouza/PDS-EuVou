@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   post 'euvou/confirmation', param: :id
 
   devise_for :users,
-            controllers: { omniauth_callbacks: 'omniauth_callbacks'}
+  controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   resources :events
   resources :categories
 
