@@ -64993,3 +64993,432 @@ Started GET "/users/auth/facebook" for 127.0.0.1 at 2015-11-22 23:48:11 -0300
 
 
 Started GET "/users/auth/facebook" for 127.0.0.1 at 2015-11-22 23:48:11 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-23 00:27:06 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/custom/_menu_lateral.html.erb (0.0ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/custom/_scripts.html.erb (0.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 221ms (Views: 220.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/1preview.self-5197be34f34c98ba28fa6cd420d9b69452fcd1a63da29e384bf7e6003a60769f.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/bootstrap.self-dd8ac08e17487e70c109f7c6bd9417ddb3750e7a11c3bd0c8043bfc6294bc6d3.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/botao_input_file.self-b7c8f1e5ef99702860c651f53722bc7214dd6b3b000faef5652727be3235299e.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/comments.self-be839fca1ed905fa1b4cdb5934a857a07a02bd19e93426270dc34d1ace57d2b3.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/custom.self-1f474328f46b0ad36a090ea38fe1fcb67011a2575bd838bbb1a376916e855a2d.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/devise.self-5d687c6754c0a8cd530d339e592e4779c3e9f85751286a37567066f4a2cb0199.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/omniauth_callbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/euvou.self-563d30e0bbdc3a60eea2d7f146eaf79c4123487aefca937d8d5c6fafe8faeea9.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/scaffolds.self-a3df7ad8d3aa69851334883b7e665af9edc327a3c2824ef86f3bd3e27998a25c.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/events.self-b71572765267e3ea48640907ee25fc54cf0f6fbc130d12ef1d71deb16136c772.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/font-awesome.self-b6fed9cf2c062bad3fe02fb2c471b85a97f947fbca7b9c7fa773dbebc5f27762.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/style.self-f550ced9b7b4bf0ff3a159a223c858c6b97528ea78ad7effb1b24d92f0c9cfd0.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/styles.self-782ab38820bb349d3f3372e3f07dc78831d4d7bbd6ef81c45e2298669143a67f.css?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/bootstrap.self-bf3d9d0e8dffd30b063714cac0a7e26788b483f21e0ebb8669a511280a5ee97c.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/botao_input_file.self-d1af2906e4184316bc5f30ded0be879d51081b96acc3491b8f639fb5ec0dace1.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/euvou.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/formularios_fx.self-5afeaab81a208c1d4d2f2fcd10fa9d036955f5d7c9459bd395104bace62ea13f.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/ie10-viewport-bug-workaround.self-ce01c41255d7e61cc44e865184559085737a98cf6911ef67f915692152b88852.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/jquery-1.9.1.self-0128b1b2e361e2e64b7e48ba8dba94546c02fbbde5e1628f60dc899465a90dae.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/jquery.icheck.self-1eca15be90ac374eb4536c8ec175d32db0682159b5d13c7bd3f2e4a41707ff15.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/jquery.panelSnap.self-2629e9a969e85ef6bbd3eb405805f51d4437e12e5d806fbb2543ddeb59965c3c.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/jssor.slider.mini.self-c3c6f54ed103228012361c9ea9254c9dcd456381313cd3296afbc8b746066cda.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/modernizr.self-5a6d6281c52bedca896878a2edd96f658c9c081e6645b9ecbf2f6a4c7d6c58d5.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/placeholders.min.self-cd051d2d96fc8ff98e8abee87fdd492e6e7ee4e0cbe239ce9a3977e3b8d28334.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/bootstrap.js" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/respond.src.self-57a508f0355d2497874b83d02c21fa94680a3a96f8dcae203b0f6c1cca324c9e.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/waypoints.min.self-2bc4ab2bb3c68d3e658295b2d181d35b3bbf08e395120ce48c0439af20079937.js?body=1" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/jquery-1.9.1.js" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/respond.src.js" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/jquery.icheck.js" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/jquery.panelSnap.js" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/placeholders.min.js" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/waypoints.min.js" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/formularios_fx.js" for 127.0.0.1 at 2015-11-23 00:27:07 -0300
+
+
+Started GET "/assets/fontawesome-webfont.woff2?v=4.3.0" for 127.0.0.1 at 2015-11-23 00:27:09 -0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-11-23 00:27:09 -0300
+
+
+Started GET "/assets/blue%402x.png" for 127.0.0.1 at 2015-11-23 00:27:09 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/blue%402x.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.5) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.5) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.1) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (155.7ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.7ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (135.2ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2015-11-23 00:27:32 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2015-11-23 00:27:36 -0300
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2015-11-23 00:27:37 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-23 00:30:12 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/custom/_menu_lateral.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/custom/_scripts.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (45.3ms)
+Completed 200 OK in 589ms (Views: 566.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/1preview.self-5197be34f34c98ba28fa6cd420d9b69452fcd1a63da29e384bf7e6003a60769f.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:12 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/bootstrap.self-dd8ac08e17487e70c109f7c6bd9417ddb3750e7a11c3bd0c8043bfc6294bc6d3.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/botao_input_file.self-b7c8f1e5ef99702860c651f53722bc7214dd6b3b000faef5652727be3235299e.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/comments.self-be839fca1ed905fa1b4cdb5934a857a07a02bd19e93426270dc34d1ace57d2b3.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/custom.self-1f474328f46b0ad36a090ea38fe1fcb67011a2575bd838bbb1a376916e855a2d.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/devise.self-5d687c6754c0a8cd530d339e592e4779c3e9f85751286a37567066f4a2cb0199.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/euvou.self-563d30e0bbdc3a60eea2d7f146eaf79c4123487aefca937d8d5c6fafe8faeea9.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/events.self-b71572765267e3ea48640907ee25fc54cf0f6fbc130d12ef1d71deb16136c772.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/font-awesome.self-b6fed9cf2c062bad3fe02fb2c471b85a97f947fbca7b9c7fa773dbebc5f27762.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/omniauth_callbacks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/scaffolds.self-a3df7ad8d3aa69851334883b7e665af9edc327a3c2824ef86f3bd3e27998a25c.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/style.self-f550ced9b7b4bf0ff3a159a223c858c6b97528ea78ad7effb1b24d92f0c9cfd0.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/styles.self-782ab38820bb349d3f3372e3f07dc78831d4d7bbd6ef81c45e2298669143a67f.css?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/bootstrap.self-bf3d9d0e8dffd30b063714cac0a7e26788b483f21e0ebb8669a511280a5ee97c.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/botao_input_file.self-d1af2906e4184316bc5f30ded0be879d51081b96acc3491b8f639fb5ec0dace1.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/euvou.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/formularios_fx.self-5afeaab81a208c1d4d2f2fcd10fa9d036955f5d7c9459bd395104bace62ea13f.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/ie10-viewport-bug-workaround.self-ce01c41255d7e61cc44e865184559085737a98cf6911ef67f915692152b88852.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/jquery-1.9.1.self-0128b1b2e361e2e64b7e48ba8dba94546c02fbbde5e1628f60dc899465a90dae.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/jquery.icheck.self-1eca15be90ac374eb4536c8ec175d32db0682159b5d13c7bd3f2e4a41707ff15.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/jquery.panelSnap.self-2629e9a969e85ef6bbd3eb405805f51d4437e12e5d806fbb2543ddeb59965c3c.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/jssor.slider.mini.self-c3c6f54ed103228012361c9ea9254c9dcd456381313cd3296afbc8b746066cda.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/modernizr.self-5a6d6281c52bedca896878a2edd96f658c9c081e6645b9ecbf2f6a4c7d6c58d5.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/omniauth_callbacks.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/placeholders.min.self-cd051d2d96fc8ff98e8abee87fdd492e6e7ee4e0cbe239ce9a3977e3b8d28334.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/respond.src.self-57a508f0355d2497874b83d02c21fa94680a3a96f8dcae203b0f6c1cca324c9e.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/waypoints.min.self-2bc4ab2bb3c68d3e658295b2d181d35b3bbf08e395120ce48c0439af20079937.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/jquery-1.9.1.js" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/bootstrap.js" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/respond.src.js" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/jquery.icheck.js" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/placeholders.min.js" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/waypoints.min.js" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/jquery.panelSnap.js" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/formularios_fx.js" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+
+Started GET "/assets/blue%402x.png" for 127.0.0.1 at 2015-11-23 00:30:13 -0300
+
+ActionController::RoutingError (No route matches [GET] "/assets/blue%402x.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.5) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.5) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.1) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.1) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.1) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.0ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (213.1ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.5ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (72.8ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rebeca/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (172.3ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2015-11-23 00:30:16 -0300
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2015-11-23 00:30:21 -0300
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2015-11-23 00:30:21 -0300
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2015-11-23 00:30:22 -0300
