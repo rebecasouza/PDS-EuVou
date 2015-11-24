@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20151122225255) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "categories", force: :cascade do |t|
     t.string   "titulo"
     t.string   "icone"
@@ -28,7 +25,7 @@ ActiveRecord::Schema.define(version: 20151122225255) do
     t.integer "event_id",    null: false
   end
 
-  add_index "categories_events", ["event_id", "category_id"], name: "index_categories_events_on_event_id_and_category_id", using: :btree
+  add_index "categories_events", ["event_id", "category_id"], name: "index_categories_events_on_event_id_and_category_id"
 
   create_table "comments", force: :cascade do |t|
     t.text     "conteudo"
@@ -39,8 +36,8 @@ ActiveRecord::Schema.define(version: 20151122225255) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "comments", ["event_id"], name: "index_comments_on_event_id", using: :btree
-  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
+  add_index "comments", ["event_id"], name: "index_comments_on_event_id"
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
   create_table "events", force: :cascade do |t|
     t.string   "titulo"
@@ -57,14 +54,14 @@ ActiveRecord::Schema.define(version: 20151122225255) do
     t.datetime "avatar_updated_at"
   end
 
-  add_index "events", ["creator_id"], name: "index_events_on_creator_id", using: :btree
+  add_index "events", ["creator_id"], name: "index_events_on_creator_id"
 
   create_table "events_users", id: false, force: :cascade do |t|
     t.integer "event_id", null: false
     t.integer "user_id",  null: false
   end
 
-  add_index "events_users", ["user_id", "event_id"], name: "index_events_users_on_user_id_and_event_id", using: :btree
+  add_index "events_users", ["user_id", "event_id"], name: "index_events_users_on_user_id_and_event_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "nome",                                   null: false
@@ -98,7 +95,7 @@ ActiveRecord::Schema.define(version: 20151122225255) do
     t.string   "uid"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
