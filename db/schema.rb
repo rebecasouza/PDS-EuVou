@@ -46,15 +46,12 @@ ActiveRecord::Schema.define(version: 20151122225255) do
     t.datetime "data"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
-    t.integer  "creator_id"
     t.integer  "eu_vou_rating",       default: 0
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
   end
-
-  add_index "events", ["creator_id"], name: "index_events_on_creator_id"
 
   create_table "events_users", id: false, force: :cascade do |t|
     t.integer "event_id", null: false
